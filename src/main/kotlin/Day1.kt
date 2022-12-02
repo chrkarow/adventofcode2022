@@ -24,7 +24,7 @@ private fun part2(calories: List<List<Int>>) {
     val result2 = calories
         .map { it.sum() }
         .sortedDescending()
-        .subList(0, 3)
+        .take(3)
         .sum()
     println("Part 2: $result2")
 }
